@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-customise</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home" sketch:type="MSArtboardGroup" transform="translate(-880.000000, -1302.000000)">
+            <g id="icon-customise" sketch:type="MSLayerGroup" transform="translate(880.000000, 1302.000000)">
+                <circle id="Oval-5-Copy-6" fill="#000000" sketch:type="MSShapeGroup" cx="40" cy="40" r="40"></circle>
+                <path d="M25,57.9982834 L31,58 L31,47 L25,47 L25,57.9982834" id="Fill-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M31,37 L31,22 L25,22 L25,36.9991485" id="Fill-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M31,41.9995962 C31,43.6568852 29.6572467,45 27.9995963,45 C26.3435608,45 25,43.6568852 25,41.9995962 C25,40.3431148 26.3435608,39 27.9995963,39 C29.6572467,39 31,40.3431148 31,41.9995962" id="Fill-3" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M37,57.9967228 L43,58 L43,37 L37,37 L37,57.9967228" id="Fill-1-Copy" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M43,27 L43,22 L37,22 L37,26.9997162" id="Fill-2-Copy-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M43,31.9995962 C43,33.6568852 41.6572467,35 39.9995963,35 C38.3435608,35 37,33.6568852 37,31.9995962 C37,30.3431148 38.3435608,29 39.9995963,29 C41.6572467,29 43,30.3431148 43,31.9995962" id="Fill-3-Copy" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M49,57.9992197 L55,58 L55,53 L49,53 L49,57.9992197" id="Fill-1-Copy-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M55,43 L55,22 L49,22 L49,42.9988079" id="Fill-2-Copy-3" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M55,47.9995962 C55,49.6568852 53.6572467,51 51.9995963,51 C50.3435608,51 49,49.6568852 49,47.9995962 C49,46.3431148 50.3435608,45 51.9995963,45 C53.6572467,45 55,46.3431148 55,47.9995962" id="Fill-3-Copy-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

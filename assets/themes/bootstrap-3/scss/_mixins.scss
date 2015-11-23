@@ -1,0 +1,199 @@
+/* ==========================================================================
+   SCSS Mixins
+   ========================================================================== */
+
+/* Responsive Detection */
+@mixin breakpoint($media) {
+	@if $media == mobile {
+		@media only screen and (max-width: 640px) { @content }
+	}
+	@else if $media == small-mobile {
+		@media only screen and (max-width: 440px) { @content }
+	}
+	@else if $media == above-mobile {
+		@media only screen and (max-width: 641px) { @content }
+	}
+	@else if $media == tablet {
+		@media only screen and (max-width: 768px) { @content }
+	}
+	@else if $media == small-desktop {
+		@media only screen and (max-width: 1024px) { @content }
+	}
+	@else if $media == desktop {
+		@media only screen and (max-width: 1279px) { @content }
+	}
+	@else if $media == below-desktop {
+		@media only screen and (max-width: 960px) { @content }
+	}
+	@else if $media == circle-break {
+		@media only screen and (max-width: 1160px) { @content }
+	}
+	@else if $media == desktop-wide {
+		@media only screen and (min-width: 1260px) { @content }
+	}
+	@else if $media == above-desktop {
+		@media only screen and (min-width: 769px) { @content }
+	}
+}
+
+
+/* Box Shadow */
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset: false) {
+	@if $inset {
+		-webkit-box-shadow:inset $top $left $blur $spread $color;
+		-moz-box-shadow:inset $top $left $blur $spread $color;
+		box-shadow:inset $top $left $blur $spread $color;
+	} @else {
+		-webkit-box-shadow: $top $left $blur $spread $color;
+		-moz-box-shadow: $top $left $blur $spread $color;
+		box-shadow: $top $left $blur $spread $color;
+	}
+}
+
+/* Border Radius */
+
+@mixin border-radius($top, $right, $bottom, $left) {
+	-webkit-border-radius: $top $right $bottom $left;
+	-moz-border-radius: $top $right $bottom $left;
+	-o-border-radius: $top $right $bottom $left;
+	border-radius: $top $right $bottom $left;
+	background-clip: padding-box;
+}
+
+/* animation */
+
+@mixin animation($anim, $speed, $loop) {
+	-webkit-animation: $anim $speed $loop;
+	-moz-animation: $anim $speed $loop;
+	-o-animation: $anim $speed $loop;
+	animation: $anim $speed $loop;
+}
+
+// keyframes mixin
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+/*
+@author 14islands.com
+SASS mixins for future proof resolution media query
+*/
+@mixin if-min-resolution($dppx) {
+	@include if-resolution(min, $dppx) {
+		@content;
+	}
+}
+
+@mixin if-max-resolution($dppx) {
+	@include if-resolution(max, $dppx) {
+		@content;
+	}
+}
+
+@mixin if-resolution($prefix, $dppx) {
+	/* 1px = 96dpi */
+	$dpi: $dppx * 96;
+	@media
+	(-webkit-#{$prefix}-device-pixel-ratio: #{$dppx}),
+	( #{$prefix}--moz-device-pixel-ratio: #{$dppx}),
+	( -o-#{$prefix}-device-pixel-ratio: #{$dppx*2}/2),
+	( #{$prefix}-device-pixel-ratio: #{$dppx}),
+	( #{$prefix}-resolution: #{$dpi}dpi),
+	( #{$prefix}-resolution: #{$dppx}dppx) {
+		@content;
+	}
+}
+
+/* Opacity mixin */
+@mixin opacity($trans) {
+	opacity: $trans;
+	filter: alpha(opacity=($trans * 100));
+}
+
+/* Smooth transition */
+@mixin smooth {
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/* Smooth transition */
+@mixin no-transition {
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+@mixin smoothbg {
+	-moz-transition: background 1s ease-in-out, box-shadow 0.3s ease-in-out;
+	-webkit-transition: background 1s ease-in-out, box-shadow 0.3s ease-in-out;
+	-o-transition: background 1s ease-in-out, box-shadow 0.3s ease-in-out;
+	transition: background 1s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Rotate Mixin */
+@mixin rotate-element($deg) {
+	$prefixes: "-moz-transform" "-webkit-transform" "-o-transform" "-ms-transform" "transform";
+
+	@each $prefix in $prefixes {
+		#{$prefix}: rotate(#{$deg}deg);
+	}
+
+	@if $deg >= 270 {
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	}
+	@else if $deg >= 180 {
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	}
+	@else if $deg >= 90 {
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+	}
+	@else {
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
+	}
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+/* FONT SIZE */
+@mixin font-size($sizeValue: 14) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 10) + rem;
+  line-height: ($sizeValue + 6) + px;
+  line-height: ( ($sizeValue + 6) / 10) + rem;
+}
+
+
+/* For clearing floats like a boss */
+%clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}

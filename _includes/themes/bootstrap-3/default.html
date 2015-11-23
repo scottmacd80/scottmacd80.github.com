@@ -1,0 +1,136 @@
+<!doctype html>
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://microformats.org/profile/hcard">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/normalize.css">
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/tablesaw.bare.css">
+
+    <script src="{{ ASSET_PATH }}/js/vendor/modernizr-2.8.3.min.js"></script>
+
+      <!-- atom & rss feed -->
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+  </head>
+
+  <body class="{% body_class %}">
+
+    <header class="site-header" role="banner">
+      <div class="inner container layout">
+          <a href="{{ HOME_PATH }}" class="logo image-replace floated bd-no-float">{{ site.title }}</a>
+
+          <!-- MOBILE MENU TRIGGER -->
+          <a href="#" class="hamburger">
+              <span class="ham-wrapper">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </span>
+          </a>
+          <!-- END MOBILE MENU TRIGGER -->
+
+          <nav class="main-nav floated-right bd-no-float" role="navigation">
+              <ul class="floated-list bd-block-list layout">
+                {% assign pages_list = site.pages %}
+                {% assign group = 'navigation' %}
+                {% include JB/pages_list %}
+              </ul>
+          </nav>
+      </div>
+
+      {% assign url_parts = page.url | split: '/' %}
+      {% assign url_parts_size = url_parts | size %}
+      {% assign rm = url_parts | last %}
+      {% assign base_url = page.url | replace: rm %}
+      {% assign pages = site.pages | sort:"weight"  %}
+
+      <div class="sub-nav">
+          <ul class="container floated-list bd-block-list layout module">
+
+          {% for node in pages %}
+            {% if node.url contains base_url %}
+              {% assign node_url_parts = node.url | split: '/' %}
+              {% assign node_url_parts_size = node_url_parts | size %}
+              {% assign filename = node_url_parts | last %}
+              {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
+
+              <li><a href='{{node.url}}' class="{% if page.url contains node.url %}active{% endif %}">{{node.title}}</a></li>
+
+              {% endif %}
+              {% endif %}
+          {% endfor %}
+
+          </ul>
+      </div>
+  </header>
+
+
+    {{ content }}
+
+
+    <footer class="site-footer container module" role="contentinfo">
+
+      <div class="inner layout">
+          <ul class="social inline-list floated-right bd-no-float layout">
+              <li><a href="#"><img src="{{ ASSET_PATH }}/bootstrap/img/icon-twitter.svg" alt="Follow us on Twitter"></a></li>
+              <li><a href="#"><img src="{{ ASSET_PATH }}/bootstrap/img/icon-facebook.svg" alt="Like us on Facebook"></a></li>
+              <li><a href="#"><img src="{{ ASSET_PATH }}/bootstrap/img/icon-google.svg" alt="Find us on Google+"></a></li>
+              <li><a href="#"><img src="{{ ASSET_PATH }}/bootstrap/img/icon-github.svg" alt="Fork us on Github"></a></li>
+          </ul>
+
+          <ul class="vcard floated bd-no-float layout">
+              <li class="layout bd-centered-copy">
+                  <span class="fn org floated bd-no-float">OpenHome</span>
+
+                  <ul class="adr inline-list comma-seperated-list floated bd-no-float layout">
+                      <li class="street-address">Glasgow Road</li>
+                      <li class="extended-address">Eaglesham</li>
+                      <li class="locality">Glasgow</li>
+                      <li class="postal-code">G76 0EQ</li>
+                  </ul>
+              </li>
+              <li>
+                  <ul class="inline-list space-separated-list layout">
+                      <li class="tel phone"><span class="type visuallyhidden">Work</span>0141 123 4567</li>
+                      <li><a href="#" class="email">info@openhome.co.uk</a></li>
+                  </ul>
+              </li>
+
+          </ul>
+      </div>
+
+      <ul class="footer-nav layout inline-list">
+          {% assign pages_list = site.pages %}
+          {% assign group = 'footer' %}
+          {% include JB/pages_list %}
+      </ul>
+
+    </footer>
+  </div>
+
+
+
+
+    {% include JB/analytics %}
+
+
+    <script src="{{ ASSET_PATH }}/js/vendor/jquery-1.11.2.min.js"></script>
+    <!--[if lt IE 9]><script src="js/respond.js"></script><!--<![endif]-->
+    <script src="{{ ASSET_PATH }}/js/plugins.js"></script>
+    <script src="{{ ASSET_PATH }}/js/tablesaw.js"></script>
+    <script src="{{ ASSET_PATH }}/js/main.js"></script>
+  </body>
+</html>

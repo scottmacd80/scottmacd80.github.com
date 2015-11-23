@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="39px" viewBox="0 0 35 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>scroll-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home" sketch:type="MSArtboardGroup" transform="translate(-613.000000, -682.000000)" fill="#FFFFFF">
+            <g id="scroll-arrow" sketch:type="MSLayerGroup" transform="translate(613.000000, 682.000000)">
+                <path d="M20.8020535,20.7056627 C20.8020535,22.4708142 19.3725798,23.9011214 17.607229,23.9011214 C15.8443342,23.9011214 14.4136325,22.4708142 14.4136325,20.7056627 C14.4136325,18.9405113 15.8443342,17.5102041 17.607229,17.5102041 C19.3725798,17.5102041 20.8020535,18.9405113 20.8020535,20.7056627" id="Fill-1" sketch:type="MSShapeGroup"></path>
+                <path d="M20.7998246,11.9511751 C20.7998246,13.7163265 19.3703509,15.1466337 17.605,15.1466337 C15.8421053,15.1466337 14.4114035,13.7163265 14.4114035,11.9511751 C14.4114035,10.1860236 15.8421053,8.75510204 17.605,8.75510204 C19.3703509,8.75510204 20.7998246,10.1860236 20.7998246,11.9511751" id="Fill-2" sketch:type="MSShapeGroup"></path>
+                <path d="M20.7998246,3.19607304 C20.7998246,4.96122449 19.3703509,6.39153169 17.605,6.39153169 C15.8421053,6.39153169 14.4114035,4.96122449 14.4114035,3.19607304 C14.4114035,1.43092159 15.8421053,0 17.605,0 C19.3703509,0 20.7998246,1.43092159 20.7998246,3.19607304" id="Fill-2-Copy" sketch:type="MSShapeGroup"></path>
+                <path d="M34.702807,21.4374608 L30.4757895,17.2092073 L17.605614,30.0862728 L4.73482456,17.2092073 L0.508421053,21.4374608 L17.5810526,38.5200473 L17.605614,38.4954715 L17.6301754,38.5200473 L34.702807,21.4374608" id="Fill-3" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

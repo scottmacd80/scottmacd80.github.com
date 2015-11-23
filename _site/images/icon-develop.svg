@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-develop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home" sketch:type="MSArtboardGroup" transform="translate(-480.000000, -1522.000000)">
+            <g id="icon-develop" sketch:type="MSLayerGroup" transform="translate(480.000000, 1522.000000)">
+                <circle id="Oval-5-Copy-5" fill="#000000" sketch:type="MSShapeGroup" cx="40" cy="40" r="40"></circle>
+                <circle id="Oval-88" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="40" cy="51" r="3"></circle>
+                <circle id="Oval-88-Copy" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="48" cy="51" r="3"></circle>
+                <circle id="Oval-88-Copy-2" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="56" cy="51" r="3"></circle>
+                <path d="M22,27.6745787 L33.1699473,38.8430416 L22.0014844,50.0122467 L25.6745787,53.6875676 L40.5183625,38.8437838 L25.6745787,24 L22,27.6745787 Z" id="Fill-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

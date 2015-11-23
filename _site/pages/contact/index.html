@@ -1,0 +1,534 @@
+
+<!doctype html>
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Contact</title>
+    
+    <meta name="author" content="OpenHome">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://microformats.org/profile/hcard">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="/assets/themes/bootstrap-3/css/normalize.css">
+    <link href="/assets/themes/bootstrap-3/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="stylesheet" href="/assets/themes/bootstrap-3/css/tablesaw.bare.css">
+
+    <script src="/assets/themes/bootstrap-3/js/vendor/modernizr-2.8.3.min.js"></script>
+
+      <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+  </head>
+
+  <body class="url_pages_contact_index layout_default">
+
+    <header class="site-header" role="banner">
+      <div class="inner container layout">
+          <a href="/" class="logo image-replace floated bd-no-float">OpenHome</a>
+
+          <!-- MOBILE MENU TRIGGER -->
+          <a href="#" class="hamburger">
+              <span class="ham-wrapper">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </span>
+          </a>
+          <!-- END MOBILE MENU TRIGGER -->
+
+          <nav class="main-nav floated-right bd-no-float" role="navigation">
+              <ul class="floated-list bd-block-list layout">
+                
+                
+                
+
+
+
+
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+
+        
+      	<li><a href="/pages/use/index.html">Use</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+
+        
+      	<li><a href="/pages/develop/index.html">Develop</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+
+        
+      	<li><a href="/pages/clients/index.html">Clients</a></li>
+      	
+      
+    
+  
+    
+      
+
+        
+      	<li><a href="/pages/openhomeco/index.html">OpenHomeCo</a></li>
+      	
+      
+    
+  
+    
+      
+
+        
+      	<li class="active"><a href="/pages/contact/index.html" class="active">Contact</a>
+         </li>
+      	
+      
+    
+  
+
+
+
+
+
+
+
+
+              </ul>
+          </nav>
+      </div>
+
+      
+      
+      
+      
+      
+
+      <div class="sub-nav">
+          <ul class="container floated-list bd-block-list layout module">
+
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+              
+              
+          
+
+          </ul>
+      </div>
+  </header>
+
+
+    
+<div class="wrapper no-aside layout">
+    <h1 class="visuallyhidden">Contact us</h1>
+
+    <div id="map">
+</div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+
+            // How zoomed in you want the map to start at (always required)
+            zoom: 17,
+
+            mapTypeControl: false,
+
+            // The latitude and longitude to center the map (always required)
+            //center: new google.maps.LatLng(55.854903, -4.249724), // New York
+            center: new google.maps.LatLng(55.8549026, -4.24972409999998),
+
+            // How you would like to style the map.
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [
+                {
+                    "featureType": "administrative",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{ "color": "#444444" }]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [{ "color": "#f2f2f2" }]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [{ "visibility": "off" }]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [
+                        { "saturation": -100 },
+                        { "lightness": 45 }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [{ "visibility": "simplified" }]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.icon",
+                    "stylers": [{ "visibility": "off" }]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [{ "visibility": "off" }]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [
+                        { "color": "#c0e4f3" },
+                        { "visibility": "on" }
+                    ]
+                }
+            ]
+        };
+
+        // Get the HTML DOM element that will contain your map
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('map');
+
+        // Create the Google Map using our element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+
+        // Let's also add a marker while we're at it
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(55.8549026, -4.24972409999998),
+            map: map,
+            title: 'OpenHome',
+            icon: '/images/map-marker.png'
+        });
+    }
+</script>
+
+    <main class="content container module layout" role="main">
+
+        <div class="main-col">
+            
+<ul class="vcard layout">
+    <li class="layout bd-centered-copy">
+        <h2 class="fn org">OpenHome</h2>
+
+        <ul class="adr layout">
+            <li class="street-address">Glasgow Road</li>
+            <li class="extended-address">Eaglesham</li>
+            <li class="locality">Glasgow</li>
+            <li class="postal-code">G76 0EQ</li>
+        </ul>
+    </li>
+    <li>
+        <ul class="other inline-list space-separated-list layout">
+            <li class="tel phone"><span class="type visuallyhidden">Work</span>0141 123 4567</li>
+            <li><a href="#" class="email">info@openhome.co.uk</a></li>
+        </ul>
+    </li>
+</ul>
+
+<ul class="two-col-list layout">
+    <li>
+        <ul class="vcard layout">
+            <li class="fn org">
+                <h2 class="organization-name visuallyhidden">OpenHome</h2>
+                <h3 class="organization-unit">Sales and Service</h3>
+            </li>
+            <li><a href="#" class="email">sales@openhome.co.uk</a></li>
+            <li class="tel phone"><span class="type visuallyhidden">Work</span>0141 123 4567</li>
+        </ul>
+    </li>
+
+    <li>
+        <ul class="vcard layout">
+            <li class="fn org">
+                <h2 class="organization-name visuallyhidden">OpenHome</h2>
+                <h3 class="organization-unit">Support</h3>
+            </li>
+            <li><a href="#" class="email">support@openhome.co.uk</a></li>
+            <li class="tel phone"><span class="type visuallyhidden">Work</span>0141 123 4567</li>
+        </ul>
+    </li>
+</ul>
+
+        </div>
+    </main>
+
+
+
+    <footer class="site-footer container module" role="contentinfo">
+
+      <div class="inner layout">
+          <ul class="social inline-list floated-right bd-no-float layout">
+              <li><a href="#"><img src="/assets/themes/bootstrap-3/bootstrap/img/icon-twitter.svg" alt="Follow us on Twitter"></a></li>
+              <li><a href="#"><img src="/assets/themes/bootstrap-3/bootstrap/img/icon-facebook.svg" alt="Like us on Facebook"></a></li>
+              <li><a href="#"><img src="/assets/themes/bootstrap-3/bootstrap/img/icon-google.svg" alt="Find us on Google+"></a></li>
+              <li><a href="#"><img src="/assets/themes/bootstrap-3/bootstrap/img/icon-github.svg" alt="Fork us on Github"></a></li>
+          </ul>
+
+          <ul class="vcard floated bd-no-float layout">
+              <li class="layout bd-centered-copy">
+                  <span class="fn org floated bd-no-float">OpenHome</span>
+
+                  <ul class="adr inline-list comma-seperated-list floated bd-no-float layout">
+                      <li class="street-address">Glasgow Road</li>
+                      <li class="extended-address">Eaglesham</li>
+                      <li class="locality">Glasgow</li>
+                      <li class="postal-code">G76 0EQ</li>
+                  </ul>
+              </li>
+              <li>
+                  <ul class="inline-list space-separated-list layout">
+                      <li class="tel phone"><span class="type visuallyhidden">Work</span>0141 123 4567</li>
+                      <li><a href="#" class="email">info@openhome.co.uk</a></li>
+                  </ul>
+              </li>
+
+          </ul>
+      </div>
+
+      <ul class="footer-nav layout inline-list">
+          
+          
+          
+
+
+
+
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+
+        
+      	<li><a href="/terms.html">Terms and conditions</a></li>
+      	
+      
+    
+  
+    
+      
+
+        
+      	<li><a href="/accessibility.html">Accessibility</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+
+      </ul>
+
+    </footer>
+  </div>
+
+
+
+
+    
+
+
+
+
+
+    <script src="/assets/themes/bootstrap-3/js/vendor/jquery-1.11.2.min.js"></script>
+    <!--[if lt IE 9]><script src="js/respond.js"></script><!--<![endif]-->
+    <script src="/assets/themes/bootstrap-3/js/plugins.js"></script>
+    <script src="/assets/themes/bootstrap-3/js/tablesaw.js"></script>
+    <script src="/assets/themes/bootstrap-3/js/main.js"></script>
+  </body>
+</html>
+
